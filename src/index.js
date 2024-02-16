@@ -7,11 +7,6 @@ export const userName = () => {
   return name;
 };
 
-export const makeAnswer = () => {
-  const ans = readlineSync.question('Your answer: ');
-  return ans;
-};
-
 export const getAnswer = () => {
   const ans = readlineSync.question('Your answer: ');
   return ans;
