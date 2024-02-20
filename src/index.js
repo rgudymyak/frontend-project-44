@@ -46,6 +46,6 @@ export const getRandomNumber = (min, max) => {
 
 export const congrats = (rightAnswer, name) => {
   if (rightAnswer === 3) {
-    console.log(`Congratulations, ${name}`);
+    console.log(`Congratulations, ${name}!`);
   }
 };
