@@ -14,10 +14,15 @@ export const getAnswer = () => {
 
 export const errorAnswer = (ans, name, value) => {
   if (typeof ans === 'string') {
-    console.log(`${ans} is wrong answer ;(. Correct answer was "no".
+    if (ans === 'yes') {
+      console.log(`'${ans}' is wrong answer ;(. Correct answer was 'no'.
     Let's try again, ${name}!`);
+    } else if (ans === 'no') {
+      console.log(`'${ans}' is wrong answer ;(. Correct answer was 'yes'.
+    Let's try again, ${name}!`);
+    }
   } else if (typeof ans === 'number') {
-    console.log(`${ans} is wrong answer ;(. Correct answer was ${value}.
+    console.log(`'${ans}' is wrong answer ;(. Correct answer was '${value}'.
     Let's try again, ${name}!`);
   }
 };
