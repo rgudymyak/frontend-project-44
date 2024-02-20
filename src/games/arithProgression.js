@@ -31,7 +31,7 @@ const arithProgressionGame = () => {
     const arr = arithProgression();
     const randomIndex = Math.floor(Math.random() * arr.length);
     const idx = arr.splice(randomIndex, 1, '..');
-    question(arr);
+    question(arr.join(' '));
     const ans = parseInt(getAnswer(), 10);
     if (ans === parseInt(idx, 10)) {
       correctAnswer();
