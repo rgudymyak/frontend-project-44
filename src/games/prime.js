@@ -9,28 +9,6 @@ import {
   congrats,
 } from '../index.js';
 
-// === More readable ===
-/**
- * Preliminary checks:
- *
- * Checks whether the number n is less than or
- * equal to 1. If so, the function returns an
- * error.
- * It checks whether n is equal to 2 or 3. If it
- * is, the number is considered prime.
- * Checking for divisibility by 2 and 3:
- *
- * It checks whether the number n is divisible by
- * 2 or 3. If it is divisible, the number is said
- * to be composite.
- * Checking for divisibility by 6k ± 1:
- *
- * An optimised approach is used to check
- * division by numbers of the form 6k ± 1 (except
- * 2 and 3), which reduces the number of
- * divisions.
- */
-
 const isPrime = (n) => {
   if (n < 1) {
     return 'error';
@@ -74,10 +52,7 @@ const prime = () => {
     if (isPrime(randomNumber) === 'Prime' && ans.toLowerCase() === 'yes') {
       correctAnswer();
       rightAnswer += 1;
-    } else if (
-      isPrime(randomNumber) === 'Composite' &&
-      ans.toLowerCase() === 'no'
-    ) {
+    } else if (isPrime(randomNumber) === 'Composite' && ans.toLowerCase() === 'no') {
       correctAnswer(0);
       rightAnswer += 1;
     } else {

@@ -11,8 +11,7 @@ import {
 
 const getRandomOption = () => {
   const arrayOfOptions = ['+', '-', '*'];
-  const randomItem =
-    arrayOfOptions[Math.floor(Math.random() * arrayOfOptions.length)];
+  const randomItem = arrayOfOptions[Math.floor(Math.random() * arrayOfOptions.length)];
   return randomItem;
 };
 
