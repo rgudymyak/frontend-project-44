@@ -32,7 +32,7 @@ import {
  */
 
 const isPrime = (n) => {
-  if (n <= 1) {
+  if (n < 1) {
     return 'error';
   }
 
@@ -66,7 +66,7 @@ const prime = () => {
   let rightAnswer = 0;
   const rounds = 3;
   const name = userName();
-  makeQuestion('Answer "yes" if given number is prime. Otherwise answer "no".');
+  makeQuestion("Answer 'yes' if given number is prime. Otherwise answer 'no'.");
   for (let i = 0; i < rounds; i += 1) {
     const randomNumber = getRandomNumber(1, 10);
     question(randomNumber);
