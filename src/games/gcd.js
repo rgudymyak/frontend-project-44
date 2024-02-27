@@ -10,7 +10,7 @@ const runGcd = () => {
   const randomNumber = getRandomNumber(1, 100);
   const secondRandomNumber = getRandomNumber(1, 100);
   const question = `${randomNumber} ${secondRandomNumber}`;
-  const answer = nod(randomNumber, secondRandomNumber);
+  const answer = `${nod(randomNumber, secondRandomNumber)}`;
   return [question, answer];
 };
 

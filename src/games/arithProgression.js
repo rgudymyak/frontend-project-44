@@ -16,9 +16,9 @@ const runArithProgressionGame = () => {
   const randomStep = getRandomNumber(1, 5);
   const arr = arithProgression(randomLength, randomNumber, randomStep);
   const randomIndex = Math.floor(Math.random() * arr.length);
-  const idx = arr.splice(randomIndex, 1, '..');
+  const answer = `${arr[randomIndex]}`;
+  arr[randomIndex] = '..';
   const question = arr.join(' ');
-  const answer = idx;
   return [question, answer];
 };
 
