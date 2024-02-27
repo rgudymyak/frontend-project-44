@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import isEven from '../src/games/isEven.js';
+import runIsEven from '../src/games/isEven.js';
 
-isEven();
+runIsEven();

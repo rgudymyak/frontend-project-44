@@ -2,12 +2,10 @@
   "name": "@hexlet/code",
   "type": "module",
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/rgudymyak/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/rgudymyak/frontend-project-44/actions)",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint --fix ./*.js"
-  },
+  "description": "This project contains 5 console math games. Parity check, calculator, gcd, arithmetic progression, checking for a prime number",
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "lint": "eslint --fix ./*.js"
+  ,
   "bin": {
     "brain-games": "bin/brain-games.js",
     "brain-even": "bin/brain-even.js",
@@ -28,3 +26,4 @@
     "prettier": "3.2.5"
   }
 }
+

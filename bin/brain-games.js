@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import { userName } from '../src/index.js';
+import runNameQuestion from '../src/index.js';
 
-userName();
+runNameQuestion();
