@@ -2,7 +2,6 @@ import { getRandomNumber, startGame } from '../index.js';
 
 const arithProgression = (randomLength, randomNumber, randomStep) => {
   const arr = [];
-  arr.push(randomNumber);
   for (let i = 1; i < randomLength; i += 1) {
     randomNumber += randomStep;
     arr.push(randomNumber);

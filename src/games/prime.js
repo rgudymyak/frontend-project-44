@@ -1,28 +1,11 @@
 import { getRandomNumber, startGame } from '../index.js';
 
-const isPrime = (n) => {
-  if (n < 1) {
+const isPrime = (num) => {
+  if (num <= 1) {
     return false;
   }
-
-  if (n === 2 || n === 3) {
-    return true;
-  }
-
-  if (n % 2 === 0 || n % 3 === 0) {
-    return false;
-  }
-
-  const sqrt = Math.sqrt(n);
-
-  for (let i = 5; i <= sqrt; i += 6) {
-    if (n % i === 0) {
-      return false;
-    }
-  }
-
-  for (let i = 7; i <= sqrt; i += 6) {
-    if (n % i === 0) {
+  for (let i = 2; i <= Math.sqrt(num); i += 1) {
+    if (num % i === 0) {
       return false;
     }
   }
