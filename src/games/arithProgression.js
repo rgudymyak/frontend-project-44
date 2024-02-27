@@ -10,7 +10,7 @@ const arithProgression = (randomLength, randomNumber, randomStep) => {
 };
 
 const runArithProgressionGame = () => {
-  const randomLength = getRandomNumber(5, 10);
+  const randomLength = getRandomNumber(6, 10);
   const randomNumber = getRandomNumber(1, 10);
   const randomStep = getRandomNumber(1, 5);
   const arr = arithProgression(randomLength, randomNumber, randomStep);
