@@ -15,6 +15,7 @@ export const startGame = (game, rules) => {
     } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'.
       Let's try again, ${name}!`);
+      return;
     }
   }
 
