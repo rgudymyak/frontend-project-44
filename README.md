@@ -6,22 +6,39 @@
 
 <h2> Welcome to my first project! This git repository contains several math games.</h2>
 
-<p>Игра проверка на четность. Запуск игры производится командой brain-even</p>
+<h1>Minimal requirements</h1>
+<ol>
+    <li>Linux</li>
+    <li>NodeJs</li>
+    <li>npm</li>
+</ok>
+<h1>Installation</h1>
+<ol>
+    <li>git clone</li>
+    <li>make install</li>
+</ok>
+<h1>Commands to start game</h1>
+<p>brain-even - check a number for evenness</p>
 
-https://asciinema.org/a/llCJBKowB1qqE5Jyy8nm0I0xy
+<a href="https://asciinema.org/a/E7t0p9uWVEJuk0tja57KThio3" target="_blank">
+<img src="https://asciinema.org/a/E7t0p9uWVEJuk0tja57KThio3.svg" /></a>
 
-<p>Игра калькулятор. Запуск игры производится командой brain-calc</p>
+<p><span>brain-calc</span> - calculate simple expressions</p>
 
-https://asciinema.org/a/Y2ht3D9p6SKAxN70mKDKNCd7B
+<a href="https://asciinema.org/a/tfLzO9Tq1hGKcyZ78JDmLy89J" target="_blank">
+<img src="https://asciinema.org/a/tfLzO9Tq1hGKcyZ78JDmLy89J.svg" /></a>
 
-<p>Игра наибольший общий делитель. Запуск игры производится командой brain-gcd</p>
+<p><span>brain-gcd</span> - calculate the greatest common divisor of 2 numbers</p>
 
-https://asciinema.org/a/m64xolMFhUwqlxKUH41d2v5DO
+<a href="https://asciinema.org/a/4szRvpwSnhnbkqzKiecosuatG" target="_blank">
+<img src="https://asciinema.org/a/4szRvpwSnhnbkqzKiecosuatG.svg" /></a>
 
-<p>Игра арифметическая прогрессия. Запуск игры производится командой brain-progression</p>
+<p><span>brain-progression</span> - calculate and enter missing number from progression</p>
 
-https://asciinema.org/a/buh7yriBSTXNrkc8ovMrgz9Hs
+<a href="https://asciinema.org/a/yyDHTTtmgIGADQLVMnxo5B2mR" target="_blank">
+<img src="https://asciinema.org/a/yyDHTTtmgIGADQLVMnxo5B2mR.svg" /></a>
 
-<p>Игра Простое ли число? Запуск игры производится командой brain-prime</p>
+<p><span>brain-prime</span> - check a number for primality</p>
 
-https://asciinema.org/a/WYyaJR7BgUrQq9A25s1ECtzIJ
+<a href="https://asciinema.org/a/Ybq2ejLfVGiOqxxcEptnzK0NH" target="_blank">
+<img src="https://asciinema.org/a/Ybq2ejLfVGiOqxxcEptnzK0NH.svg" /></a>

@@ -1,10 +1,7 @@
-import { getRandomNumber, startGame } from '../index.js';
+import { startGame } from '../index.js';
+import { getRandomNumber } from '../utils.js';
 
-const getRandomOption = () => {
-  const arrayOfOptions = ['+', '-', '*'];
-  const randomOption = arrayOfOptions[Math.floor(Math.random() * arrayOfOptions.length)];
-  return randomOption;
-};
+const arrayOfOperators = ['+', '-', '*'];
 
 const expression = (num1, num2, option) => {
   switch (option) {
@@ -19,16 +16,16 @@ const expression = (num1, num2, option) => {
   }
 };
 
-const runBrainCalc = () => {
-  const randomOption = getRandomOption();
-  const randomNumber = getRandomNumber(1, 10);
-  const secondRandomNumber = getRandomNumber(1, 10);
-  const question = `${randomNumber} ${randomOption} ${secondRandomNumber}`;
-  const answer = `${expression(randomNumber, secondRandomNumber, randomOption)}`;
+const generateRoundCalculator = () => {
+  const operation = arrayOfOperators[getRandomNumber(0, arrayOfOperators.length - 1)];
+  const number1 = getRandomNumber(1, 10);
+  const number2 = getRandomNumber(1, 10);
+  const question = `${number1} ${operation} ${number2}`;
+  const answer = expression(number1, number2, operation).toString();
   return [question, answer];
 };
 
 export default () => {
-  const rules = 'What is the result of the expression?';
-  return startGame(runBrainCalc, rules);
+  const description = 'What is the result of the expression?';
+  return startGame(generateRoundCalculator, description);
 };
