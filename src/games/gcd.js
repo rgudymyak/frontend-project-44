@@ -1,5 +1,5 @@
-import { startGame } from '../index.js';
-import { getRandomNumber } from '../utils.js';
+import startGame from '../index.js';
+import getRandomNumber from '../utils.js';
 
 const getGcd = (num1, num2) => {
   if (num2 > num1) return getGcd(num2, num1);
