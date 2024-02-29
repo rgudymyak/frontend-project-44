@@ -11,12 +11,14 @@
     <li>Linux</li>
     <li>NodeJs</li>
     <li>npm</li>
-</ok>
+</ol>
+
 <h1>Installation</h1>
 <ol>
     <li>git clone</li>
     <li>make install</li>
-</ok>
+</ol>
+
 <h1>Commands to start game</h1>
 <p>brain-even - check a number for evenness</p>
 
