@@ -1,10 +1,10 @@
 import startGame from '../index.js';
 import getRandomNumber from '../utils.js';
 
-const arrayOfOperators = ['+', '-', '*'];
+const operators = ['+', '-', '*'];
 
-const expression = (num1, num2, option) => {
-  switch (option) {
+const expression = (num1, num2, operator) => {
+  switch (operator) {
     case '+':
       return num1 + num2;
     case '-':
@@ -12,12 +12,12 @@ const expression = (num1, num2, option) => {
     case '*':
       return num1 * num2;
     default:
-      throw new Error(`Unknown operand: '${option}'!`);
+      throw new Error(`Unknown operand: '${operator}'!`);
   }
 };
 
-const generateRoundCalculator = () => {
-  const operation = arrayOfOperators[getRandomNumber(0, arrayOfOperators.length - 1)];
+const generateRound = () => {
+  const operation = operators[getRandomNumber(0, operators.length - 1)];
   const number1 = getRandomNumber(1, 10);
   const number2 = getRandomNumber(1, 10);
   const question = `${number1} ${operation} ${number2}`;
@@ -27,5 +27,5 @@ const generateRoundCalculator = () => {
 
 export default () => {
   const description = 'What is the result of the expression?';
-  return startGame(generateRoundCalculator, description);
+  return startGame(generateRound, description);
 };

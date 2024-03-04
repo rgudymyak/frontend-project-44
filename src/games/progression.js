@@ -11,19 +11,19 @@ const generateProgression = (length, firstNumber, step) => {
   return arr;
 };
 
-const generateRoundArithProgression = () => {
+const generateRound = () => {
   const progressionLength = getRandomNumber(6, 10);
   const firstNumber = getRandomNumber(1, 10);
   const step = getRandomNumber(1, 5);
   const progression = generateProgression(progressionLength, firstNumber, step);
-  const randomIndex = getRandomNumber(0, progression.length - 1);
-  const answer = progression[randomIndex].toString();
-  progression[randomIndex] = '..';
+  const hiddenIndex = getRandomNumber(0, progression.length - 1);
+  const answer = progression[hiddenIndex].toString();
+  progression[hiddenIndex] = '..';
   const question = progression.join(' ');
   return [question, answer];
 };
 
 export default () => {
   const description = 'What number is missing in the progression?';
-  return startGame(generateRoundArithProgression, description);
+  return startGame(generateRound, description);
 };
